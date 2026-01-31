@@ -1,0 +1,34 @@
+# Source files kept, build artifacts excluded
+.git/
+.github/
+.sisyphus/
+.vscode/
+.idea/
+
+# Examples
+example-expo/
+example-bare/
+
+# iOS build
+ios/build/
+ios/Pods/
+
+# Android build
+android/build/
+android/.gradle/
+
+# Test files
+**/__tests__/
+**/__mocks__/
+coverage/
+jest.config.js
+
+# Dev configs
+.editorconfig
+biome.json
+tsconfig.json
+tsconfig.build.json
+
+# Misc
+*.log
+.DS_Store

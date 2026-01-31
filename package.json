@@ -1,0 +1,95 @@
+{
+  "name": "@parrotnavy/rn-native-updates",
+  "version": "0.10.1",
+  "description": "React Native app update checker with hooks support. Uses Play Core for Android and iTunes Lookup API for iOS.",
+  "main": "./lib/module/index.js",
+  "types": "./lib/typescript/src/index.d.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./lib/typescript/src/index.d.ts",
+      "default": "./lib/module/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "*.podspec",
+    "!ios/build",
+    "!android/build",
+    "!**/__tests__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "clean": "del-cli lib android/build ios/build",
+    "prepare": "bob build",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check src/",
+    "check:fix": "biome check --write .",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "app-update",
+    "version-check",
+    "play-store",
+    "app-store",
+    "in-app-update"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parrotnavy/rn-native-updates.git"
+  },
+  "author": "ParrotNavy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parrotnavy/rn-native-updates/issues"
+  },
+  "homepage": "https://github.com/parrotnavy/rn-native-updates#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.0",
+    "@testing-library/react-native": "^13.3.0",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.2.0",
+    "del-cli": "^6.0.0",
+    "jest": "^29.7.0",
+    "react": "^18.2.0",
+    "react-native": "^0.76.0",
+    "react-native-builder-bob": "^0.35.0",
+    "react-test-renderer": "^18.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.73.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "module",
+        {
+          "esm": true
+        }
+      ],
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}

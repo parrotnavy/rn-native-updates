@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+lib/
+dist/
+build/
+
+# iOS
+ios/build/
+ios/Pods/
+*.xcworkspace
+*.xcuserdata
+
+# Android
+android/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Package
+*.tgz
+*.log
+
+# Test
+coverage/
+
+# Temp
+.tmp/
+.cache/
+
+# Example apps (native generated code)
+example-expo/ios/
+example-expo/android/
+example-bare/ios/Pods/
+example-bare/ios/build/
+example-bare/android/build/
+example-bare/android/.gradle/
+.sisyphus/
