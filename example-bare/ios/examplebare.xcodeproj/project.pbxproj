@@ -505,14 +505,14 @@
 					"-lc++",
 					"$(inherited)",
 				);
-			OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-			PRODUCT_BUNDLE_IDENTIFIER = "com.google.ios.youtube";
-			PRODUCT_NAME = "$(TARGET_NAME)";
-			TEST_HOST = "$(BUILT_PRODUCTS_DIR)/examplebare.app/examplebare";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yelp.yelpiphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/examplebare.app/examplebare";
+			};
+			name = Debug;
 		};
-		name = Debug;
-	};
-	00E356F71AD99517003FC87E /* Release */ = {
+		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-examplebare-examplebareTests.release.xcconfig */;
 			buildSettings = {
@@ -530,14 +530,14 @@
 					"-lc++",
 					"$(inherited)",
 				);
-			OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-			PRODUCT_BUNDLE_IDENTIFIER = "com.google.ios.youtube";
-			PRODUCT_NAME = "$(TARGET_NAME)";
-			TEST_HOST = "$(BUILT_PRODUCTS_DIR)/examplebare.app/examplebare";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yelp.yelpiphone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/examplebare.app/examplebare";
+			};
+			name = Release;
 		};
-		name = Release;
-	};
-	13B07F941A680F5B00A75B9A /* Debug */ = {
+		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-examplebare.debug.xcconfig */;
 			buildSettings = {
@@ -557,10 +557,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-			OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-			PRODUCT_BUNDLE_IDENTIFIER = "com.google.ios.youtube";
-			PRODUCT_NAME = examplebare;
-			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yelp.yelpiphone;
+				PRODUCT_NAME = examplebare;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -585,11 +585,11 @@
 					"-ObjC",
 					"-lc++",
 				);
-			OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-			PRODUCT_BUNDLE_IDENTIFIER = "com.google.ios.youtube";
-			PRODUCT_NAME = examplebare;
-			SWIFT_VERSION = 5.0;
-			VERSIONING_SYSTEM = "apple-generic";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yelp.yelpiphone;
+				PRODUCT_NAME = examplebare;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
