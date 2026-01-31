@@ -15,6 +15,10 @@ public class NativeUpdatesModule: NSObject, RCTBridgeModule {
   }
 
   @objc public func constantsToExport() -> [AnyHashable: Any]! {
+    return getConstants()
+  }
+
+  @objc public func getConstants() -> [AnyHashable: Any]! {
     return [
       "currentVersion": Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0",
       "buildNumber": Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "0",

@@ -1,6 +1,6 @@
 {
   "name": "@parrotnavy/rn-native-updates",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "description": "React Native app update checker with hooks support. Uses Play Core for Android and iTunes Lookup API for iOS.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -91,5 +91,13 @@
         }
       ]
     ]
+  },
+  "codegenConfig": {
+    "name": "RNNativeUpdatesSpec",
+    "type": "modules",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.parrotnavy.rnnativeupdates"
+    }
   }
 }
